@@ -54,11 +54,11 @@ INCLUDEPATH += /usr/local/include /usr/include/SDL2 /usr/local/include/SDL2
 }
 
 QMAKE_CXXFLAGS_RELEASE -= -O2
-QMAKE_CXXFLAGS_RELEASE += -O3 -march=x86-64-v3
+QMAKE_CXXFLAGS_RELEASE += -O3 -march=x86-64-v2 -mavx -mpclmul -maes
 QMAKE_CFLAGS_RELEASE -= -O2
-QMAKE_CFLAGS_RELEASE += -O3 -march=x86-64-v3
+QMAKE_CFLAGS_RELEASE += -O3 -march=x86-64-v2 -mavx -mpclmul -maes
 QMAKE_LFLAGS_RELEASE -= -O2
 QMAKE_LFLAGS_RELEASE -= -Wl,-O1
-QMAKE_LFLAGS_RELEASE += -O3 -march=x86-64-v3
+QMAKE_LFLAGS_RELEASE += -O3 -march=x86-64-v2 -mavx -mpclmul -maes
 
 QMAKE_PROJECT_DEPTH = 0

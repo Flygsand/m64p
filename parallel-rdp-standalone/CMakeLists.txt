@@ -76,6 +76,6 @@ if(WIN32)
     target_link_libraries(${NAME_PLUGIN_M64P} -lwinmm)
 endif()
 
-target_compile_options(${NAME_PLUGIN_M64P} PRIVATE -march=x86-64-v3)
-target_link_options(${NAME_PLUGIN_M64P} PRIVATE -march=x86-64-v3)
+target_compile_options(${NAME_PLUGIN_M64P} PRIVATE -march=x86-64-v2 -mavx -mpclmul -maes)
+target_link_options(${NAME_PLUGIN_M64P} PRIVATE -march=x86-64-v2 -mavx -mpclmul -maes)
 set_target_properties(${NAME_PLUGIN_M64P} PROPERTIES PREFIX "")
