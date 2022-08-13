@@ -84,4 +84,4 @@ ln -s /Applications mupen64plus/Applications
 
 # 2. Create DMG
 HASH=$(git rev-parse --short HEAD)
-hdiutil create -volname m64p -srcfolder mupen64plus -ov -format UDZO mupen64plus/m64p-osx-$HASH.dmg
+hdiutil create -volname m64pre -srcfolder mupen64plus -ov -format UDZO mupen64plus/m64pre-osx-$HASH.dmg

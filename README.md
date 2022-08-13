@@ -1,7 +1,8 @@
-# m64p
-https://m64p.github.io
+# m64pre
 
-**Downloads found here: https://github.com/m64p/m64p/releases**
+A fork of [m64p](https://m64p.github.io) aimed at extending hardware support.
+
+**Downloads found here: https://github.com/Flygsand/m64pre/releases**
 
 # Wiki
-https://github.com/m64p/m64p/wiki
+https://github.com/Flygsand/m64pre/wiki

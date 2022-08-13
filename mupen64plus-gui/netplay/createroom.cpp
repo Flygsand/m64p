@@ -94,7 +94,7 @@ CreateRoom::CreateRoom(QWidget *parent)
 
     connect(this, SIGNAL (finished(int)), this, SLOT (onFinished(int)));
 
-    QNetworkRequest request(QUrl(QStringLiteral("https://m64p.s3.amazonaws.com/servers.json")));
+    QNetworkRequest request(QUrl(QStringLiteral("https://m64pre.s3.amazonaws.com/servers.json")));
     manager.get(request);
 
     broadcastSocket.bind(QHostAddress(QHostAddress::AnyIPv4), 0);

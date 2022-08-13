@@ -323,7 +323,7 @@ MainWindow::MainWindow(QWidget *parent) :
     verbose = 0;
     nogui = 0;
     ui->setupUi(this);
-    this->setWindowTitle("m64p    build: " + QStringLiteral(GUI_VERSION).mid(0,7));
+    this->setWindowTitle("m64pre    build: " + QStringLiteral(GUI_VERSION).mid(0,7));
 
     QString ini_path = QDir(QCoreApplication::applicationDirPath()).filePath("mupen64plus-gui.ini");
     settings = new QSettings(ini_path, QSettings::IniFormat, this);
@@ -426,7 +426,7 @@ void MainWindow::updateApp()
     connect(updateManager, &QNetworkAccessManager::finished,
         this, &MainWindow::updateReplyFinished);
 
-    updateManager->get(QNetworkRequest(QUrl("https://api.github.com/repos/m64p/m64p/releases/latest")));
+    updateManager->get(QNetworkRequest(QUrl("https://api.github.com/repos/Flygsand/m64pre/releases/latest")));
 #endif
 #endif
 }
